@@ -1,6 +1,6 @@
 import fetchData from "../../components/fetchData";
 
-const url = "http://localhost:5000/recordForm";
+const url = process.env.REACT_APP_SERVER_URL+"/recordForm";
 /**add records of changing the status of the book,
  * such as borrow, returned or lost to the record
  * table

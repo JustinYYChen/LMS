@@ -1,7 +1,7 @@
 import fetchData from "../../components/fetchData";
 import { addBook, getBook_array } from "./createBook";
 
-const url = "http://localhost:5000/bookForm";
+const url = process.env.REACT_APP_SERVER_URL+"/bookForm";
 /**add one category of book using post method and then
  * adding multiple books of this category based the
  * quantity entered

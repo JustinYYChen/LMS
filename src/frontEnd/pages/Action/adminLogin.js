@@ -1,5 +1,5 @@
 import fetchData from "../../components/fetchData";
-const url = "http://localhost:5000/admin";
+const url = process.env.REACT_APP_SERVER_URL+"/admin";
 //register a new account for the user
 export const register = async (user, dispatch) => {
   const result = await fetchData(

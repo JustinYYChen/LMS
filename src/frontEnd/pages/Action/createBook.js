@@ -1,7 +1,7 @@
 import fetchData from "../../components/fetchData";
 import { addRecords } from "./createRecord";
 
-const url = "http://localhost:5000/bookForm";
+const url = process.env.REACT_APP_SERVER_URL+"/bookForm";
 /**add single book of one category by fetching
  * data to the back end server
  */
